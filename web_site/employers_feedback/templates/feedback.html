@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Приглашение</title>
+  <link href="{% static 'css/normalize.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body-feedback">
+  <div class="container-skills">
+    <header class="site-head">
+      <a class="return-link" href="{% url 'main' %}">На главную</a>
+    </header>
+
+    <main>
+      <h1 class="main-title-skills-page">Отправить приглашение</h1>
+      <div class="container-form">
+        <form method="POST">
+          {% csrf_token %}
+            {% for field in form %}
+            <div class="field">
+              <label for="{{ field.id_for_label }}" class="label>">{{ field.label }}</label>
+              {{ field }}
+            </div>
+            {% endfor %}
+            <button class="button-post" type="submit">Пригласить</button>
+        </form>
+      </div>
+    </main>
+
+  </div>
+</body>
+
+</html>

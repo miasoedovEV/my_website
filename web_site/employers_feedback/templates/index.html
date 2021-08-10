@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body-main-page">
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about_me' %}">Кто я?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'page_skills' %}">Что я умею?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'page_causes' %}">Почему я?</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header-link" href="tel:+79146981092">+7 914 698 10 92</a>
+      <a class="header-link" href="mailto:stincs369@mail.ru">stincs369@mail.ru</a>
+      <a class="btn" href="{% url 'feedback' %}">Пригласить</a>
+    </header>
+
+    <main>
+      <section class="main_section">
+        <h1 class="heading">
+          JUNIOR FULL STACK DEVELOPER
+        </h1>
+        <div class="greetings">
+          <p class="greetings-text">Вас приветсвует начинающий full stack разработчик. Предлагаю ознакомиться с моими
+            возможностями.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

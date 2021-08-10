@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Что я умею?</title>
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-skills">
+    <header class="site-head">
+      <a class="return-link" href="{% url 'main' %}">На главную</a>
+    </header>
+    <main>
+      <h1 class="main-title-skills-page">Что я могу предложить</h1>
+      <ul class="list-cards">
+        <li class="card card-pyqt">
+          <h2 class="title-card">Написание приложений на PyQt5</h2>
+          <h3 class="heading-card heading-card-skills">Основные инструменты:</h3>
+          <ul class="list-contents">
+            <li class="content-card">PyQt5;</li>
+            <li class="content-card">Numpy;</li>
+            <li class="content-card">Pandas;</li>
+            <li class="content-card">Peewee.</li>
+          </ul>
+          <span class="card-link">Пример: <a href="https://github.com/miasoedovEV/Software-package-for-CMOP">Software
+              package for CMOP</a></span>
+          <span class="number-module">01</span>
+        </li>
+        <li class="card card-parser">
+          <h2 class="title-card">Создание парсеров и обработка данных</h2>
+          <h3 class="heading-card heading-card-skills">Основные инструменты:</h3>
+          <ul class="list-contents">
+            <li class="content-card">Beautifulsoup4;</li>
+            <li class="content-card">Requests;</li>
+            <li class="content-card">Pandas;</li>
+            <li class="content-card">Numpy.</li>
+          </ul>
+          <span class="card-link">Пример: <a href="https://github.com/miasoedovEV/parser">Parser</a></span>
+          <span class="number-module">02</span>
+        </li>
+        <li class="card card-backend">
+          <h2 class="title-card">Backend разработка</h2>
+          <h3 class="heading-card heading-card-skills">Основные инструменты:</h3>
+          <ul class="list-contents">
+            <li class="content-card">Python;</li>
+            <li class="content-card">Django;</li>
+            <li class="content-card">Postgresql;</li>
+            <li class="content-card">Sqlite.</li>
+          </ul>
+          <span class="card-link">Пример: <a href="https://github.com/miasoedovEV/test-web-application">Test web
+              application</a></span>
+          <span class="number-module">03</span>
+        </li>
+        <li class="card card-frontend">
+          <h2 class="title-card">Frontend разработка</h2>
+          <h3 class="heading-card heading-card-skills">Основные инструменты:</h3>
+          <ul class="list-contents">
+            <li class="content-card">HTML;</li>
+            <li class="content-card">CSS;</li>
+            <li class="content-card">Figma;</li>
+            <li class="content-card">DevTools.</li>
+          </ul>
+          <span class="card-link">Пример: <a href="https://github.com/miasoedovEV/test-web-application">My
+              site</a></span>
+          <span class="number-module">04</span>
+        </li>
+      </ul>
+    </main>
+
+  </div>
+</body>
+
+</html>

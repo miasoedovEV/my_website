@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кто я?</title>
+  <link href="{% static 'css/normalize.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body-page-about-me">
+  <div class="container-second-page">
+    <header>
+      <a class="return-link" href="{% url 'main' %}">На главную</a>
+    </header>
+    <main>
+      <h1 class="main-title-second-page">Краткое резюме</h1>
+      <h2 class="section-heading">Контактная информация</h2>
+      <div class="contact-infor">
+        <strong class="name">Мясоедов Егор Васильевич</strong>
+        <ul class="infor-list">
+          <li class="infor-item">Телефон: <a class="number-link" href="tel:+79146981092">+7 914 698 10 92</a></li>
+          <li class="infor-item">Email: <a class="mail-link" href="mailto:stincs369@mail.ru">stincs369@mail.ru</a></li>
+          <li class="infor-item">Telegram: <a href="https://telegram.im/@EVmiasoedov">@EVmiasoedov</a></li>
+          <li class="infor-item">Город проживания: Москва</li>
+          <li class="infor-item">Дата Рождения: 14.01.2000</li>
+          <li class="infor-item">Ссылка на гитхаб: <a
+              href="https://github.com/miasoedovEV?tab=repositories">@miasoedovEV</a></li>
+        </ul>
+        <img class="face-photo" src="{% static 'images/photo.jpg' %}" alt="face-photo">
+      </div>
+      <h2 class="section-heading">Интересующие вакансии</h2>
+      <ul class="vacancies-list">
+        <li class="vacancies-item card-python-developer">
+          <h3 class="heading-card">Python developer (junior)</h3>
+        </li>
+        <li class="vacancies-item card-full-stack">
+          <h3 class="heading-card">Full Stack Python developer</h3>
+        </li>
+        <li class="vacancies-item card-python-django">
+          <h3 class="heading-card">Developer python django</h3>
+        </li>
+      </ul>
+      <h2 class="section-heading">Навыки</h2>
+      <ul class="infor-list">
+        <li class="infor-item">Знание языка программирования Python</li>
+        <li class="infor-item">Разработка приложений на базе PyQt5</li>
+        <li class="infor-item">Разработка чат ботов во Вконтакте и Telegram</li>
+        <li class="infor-item">Работа с базами данных</li>
+        <li class="infor-item">Дружу с CSS</li>
+        <li class="infor-item">Дружу с HTML</li>
+        <li class="infor-item">В партнерстве с Django</li>
+        <li class="infor-item">Знаком с Django Rest Framework</li>
+      </ul>
+      <h2 class="section-heading">Образование</h2>
+      <span class="education-infor">Дальневосточный Федеральный Университет, Владивосток;</span>
+      <span class="education-infor">Нефтегазовое дело, Период обучения: 2017 - 2021;</span>
+      <span class="education-infor">Инженер.</span>
+      <h2 class="section-heading">Курсы и тренинги</h2>
+      <ul class="courses-list">
+        <li class="courses-item card-skillbox">
+          <h3 class="heading-card">SKILLBOX</h3>
+          <span class="name-courese"> Python разработчик</span>
+        </li>
+        <li class="courses-item card-englishdom">
+          <h3 class="heading-card">Englishdom</h3>
+          <span class="name-courese">Английский язык, Уровень: B1</span>
+        </li>
+      </ul>
+      <h2 class="section-heading">Обо мне</h2>
+      <p class="paragraph-about-me">Я - начинающий python разработчик. Прошел курсы python разработчик, python-фрейморк
+        Django от Skillbox. Также владею HTML
+        и CSS. Знаком с работой в системе Git. На данном этапе главной целью является развитие профессиональных навыков,
+        hard и soft скиллов. Меня вдохновляет инновационность и постоянное развитие
+        данной сферы. Поступил в университет "МИСиС" на направление "Прикладная информатика".
+      </p>
+    </main>
+  </div>
+</body>
+
+</html>

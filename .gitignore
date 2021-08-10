@@ -1,0 +1,4 @@
+env
+web_site/static
+web_site/employers_feedback/config.py
+web_site/db.sqlite3

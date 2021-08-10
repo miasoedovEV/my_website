@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Почему я??</title>
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="body-causes">
+  <div class="container-causes">
+    <header class="site-head">
+      <a class="return-link link-cause" href="{% url 'main' %}">На главную</a>
+    </header>
+    <main>
+      <h1 class="main-title-causes-page">Почему я?</h1>
+      <ul class="list-cards">
+        <li class="card-causes card-job">
+          <span class="cause">Хочу работать!</span>
+        </li>
+        <li class="card-causes card-profit-chart">
+          <span class="cause">Хочу развиваться!</span>
+        </li>
+        <li class="card-causes card-learning">
+          <span class="cause">Легко обучаемый!</span>
+        </li>
+        <li class="card-causes card-innovation">
+          <span class="cause">Держу руку на пульсе!</span>
+        </li>
+        <li class="card-causes card-idea">
+          <span class="cause">Нестандартный взгляд на решение задач!</span>
+        </li>
+        <li class="card-causes card-teamwork">
+          <span class="cause">Умею работать в команде!</span>
+        </li>
+        <li class="card-causes card-worldwide">
+          <span class="cause">Не боюсь брать ответственность на себя!</span>
+        </li>
+      </ul>
+    </main>
+
+  </div>
+</body>
+
+</html>
