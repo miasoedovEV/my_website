@@ -1,4 +1,5 @@
 env
-web_site/static
 web_site/employers_feedback/config.py
 web_site/db.sqlite3
+web_site/static/images
+web_site/static/.editorconfig

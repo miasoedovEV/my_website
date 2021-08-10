@@ -1,0 +1,495 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Yanone Kaffeesatz', Arial, Verdana, sans-serif;
+}
+
+
+.body-main-page {
+  color: #FFF5EE;
+  background-image: url('../images/background_main.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 35px 0;
+  align-items: center;
+}
+
+.header {
+  margin: 0 0 90px 0;
+  padding: 0 0 70px;
+  background-image: url('../images/seo.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100px 100px;
+}
+
+.nav {
+  display: inline-block;
+  margin: 0 35px 0 0;
+  padding: 0 0 0 400px;
+}
+
+.nav-item {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:not(:last-child) {
+  margin: 0 35px 0 0;
+}
+
+.header-link {
+  font-size: 1.5em;
+}
+
+.header-link:not(:last-child) {
+  margin: 0 35px 0 0;
+}
+
+.heading {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 4em;
+}
+
+.greetings {
+  margin: 0;
+  padding: 0 400px;
+  text-align: center;
+}
+
+.greetings-text {
+  margin: 0;
+  font-size: 1.9em;
+}
+
+.btn {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  border-color: #BDB76B;
+  font-size: 1.2em;
+  color: #000;
+  background-color: white;
+}
+
+.btn:hover {
+  background: #786b59;
+}
+
+.body-page-about-me {
+  background-color: black;
+}
+
+.container-second-page {
+  width: 1040px;
+  margin: 20px auto;
+  padding: 50px 20px;
+  align-items: center;
+  background-color: white;
+}
+
+.main-title-second-page {
+  margin: 0 0 35px 0;
+  text-align: center;
+  font-size: 3em;
+}
+
+.section-heading {
+  margin: 0 0 35px 0;
+  font-size: 2em;
+}
+
+.name {
+  display: block;
+  margin: 0 0 25px 0;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.contact-infor {
+  position: relative;
+}
+
+.infor-list {
+  display: inline-block;
+  margin: 0 100px 25px 0;
+  padding: 0 300px 0 0;
+}
+
+.face-photo {
+  position: absolute;
+  right: 75px;
+  bottom: 0;
+  width: 360px;
+  height: 240px;
+  display: inline-block;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px 0px #0000001a;
+}
+
+.infor-item {
+  list-style-type: none;
+  font-size: 1.3em;
+}
+
+.infor-item:not(:last-child) {
+  margin: 0 0 7px 0;
+}
+
+.vacancies-list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.vacancies-item {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 10px 25px 315px 25px;
+  border-radius: 15px;
+  width: 486px;
+  list-style-type: none;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 40px 0px #0000001A;
+}
+
+.vacancies-item:nth-child(2n+1) {
+  margin-right: 25px;
+}
+
+.vacancies-item:last-child {
+  margin: 0;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.heading-card {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1em;
+  font-size: 1.8em;
+}
+
+.card-python-developer {
+  color: #FFFFF0;
+  background-image: url("../images/python.jpg");
+}
+
+.card-full-stack {
+  color: #000080;
+  background-image: url("../images/fullstack.jpg");
+}
+
+.card-python-django {
+  color: #ffba00;
+  background-image: url("../images/python-django.jpg");
+}
+
+.education-infor {
+  display: block;
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.education-infor:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.paragraph-about-me {
+  margin: 0;
+  font-size: 1.3em;
+  text-indent: 1.1em;
+  text-align: left;
+  line-height: 1.2em;
+}
+
+.courses-list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.courses-item {
+  display: inline-block;
+  margin: 0;
+  padding: 265px 25px 60px 25px;
+  width: 486px;
+  list-style-type: none;
+  background-position: center top;
+  background-size: 100% 250px;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 40px 0px #0000001A;
+}
+
+.courses-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.card-skillbox {
+  background-image: url("../images/skillbox.jpg");
+}
+
+.card-englishdom {
+  background-image: url("../images/badge.jpg");
+}
+
+.name-courese {
+  margin: 0;
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+.return-link {
+  font-size: 1.2em;
+}
+
+.container-skills {
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1170px;
+}
+
+.site-head {
+  margin-bottom: 25px;
+}
+
+.main-title-skills-page {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 60px;
+  line-height: 69px;
+}
+
+.list-cards {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 250px 25px 74px 25px;
+  width: 571px;
+  background-position: center top;
+  background-size: 572px 244px;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 40px 0px #0000001A;
+}
+
+.card:nth-child(2n+1) {
+  margin-right: 25px;
+}
+
+.card:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.title-card {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.content-card {
+  margin: 0;
+  line-height: 165%;
+  font-size: 1.3em;
+  color: #333333;
+}
+
+.card-pyqt {
+  background-image: url("../images/pyqt5.jpg");
+}
+
+.card-parser {
+  background-image: url("../images/parsing.jpg");
+}
+
+.card-backend {
+  background-image: url("../images/django.jpg");
+}
+
+.card-frontend {
+  background-image: url("../images/frontend.jpg");
+}
+
+.number-module {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  margin: 0;
+  font-size: 40px;
+  color: #EAEAEA;
+}
+
+.list-contents {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-left: 25px;
+  list-style: none;
+}
+
+.heading-card-skills {
+  text-align: left;
+}
+
+.card-link{
+  font-size: 1.3em;
+}
+
+.body-causes {
+  background: linear-gradient(-45deg, #FFF, #000);
+}
+
+.main-title-causes-page {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+}
+
+.container-causes {
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1200px;
+}
+
+.card-causes {
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 270px 150px 130px 150px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 40px 0px #0000001A;
+  list-style: none;
+  text-align: center;
+  background-color: #f2f3f4;
+  background-position: center 100px;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+
+}
+
+.cause {
+  font-size: 1.4em;
+}
+
+.link-cause {
+  color: white;
+}
+
+.card-job {
+  background-image: url('../images/miner.svg');
+}
+
+.card-profit-chart {
+  background-image: url('../images/profit-chart.svg');
+}
+
+.card-learning {
+  background-image: url('../images/learning.svg');
+}
+
+.card-innovation {
+  background-image: url('../images/innovation.svg');
+}
+
+.card-idea {
+  background-image: url('../images/idea.svg');
+}
+
+.card-teamwork {
+  background-image: url('../images/teamwork.svg');
+}
+
+.card-worldwide {
+  background-image: url('../images/worldwide.svg');
+}
+
+.body-feedback {
+  background-image: url('../images/form.jpg');
+}
+
+.button-post {
+  border-radius: 10px;
+  background-color: wheat;
+}
+
+.container-form {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.field {
+  margin: 0 30px 20px 0;
+  font-size: 1.5em;
+}
+
+.input {
+  width: 400px;
+  height: 20 px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input_message {
+  width: 400px;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
