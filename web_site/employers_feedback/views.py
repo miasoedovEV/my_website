@@ -63,7 +63,7 @@ class FeedbackCreateView(FormView):
             email=email,
             text=text
         )
-        send_email(name, phone_number, email, text)
+        send_email(name, email, phone_number, text)
         return super(FeedbackCreateView, self).form_valid(form)
 
     def get_success_url(self):

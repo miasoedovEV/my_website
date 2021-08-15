@@ -1,5 +1,6 @@
-env
+venv
 web_site/employers_feedback/config.py
 web_site/db.sqlite3
 web_site/static/images
 web_site/static/.editorconfig
+web_site/web_site/prod_settings.py
